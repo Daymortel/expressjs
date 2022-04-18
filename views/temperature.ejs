@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../style/style.css" />
     <title><%= title %></title>
   </head>
   <body>
-    <p><%= temperature %></p>
+    <div class="weather">
+      <p><%= temperature %></p>
+      <a href="/"><button>Accueil</button></a>
+    </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 </html>

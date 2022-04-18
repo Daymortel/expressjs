@@ -25,7 +25,7 @@ app.get("/temperature/:city", async (req, res) => {
   const temperature = await geoCode(city);
   console.log(temperature);
   res.render("temperature", {
-    title: "Weather App",
+    title: `Weather - ${city}`,
     temperature: `Il fait ${temperature} degrés celcius à ${city}.`
   });
 });
@@ -35,6 +35,6 @@ app.get("/temperature/:city", async (req, res) => {
 //   res.send("ok");
 // });
 
-const port = 3000;
+const port = 3467;
 
 app.listen(port, () => console.log(`Listenning on port ${port}...`));

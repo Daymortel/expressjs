@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="/style/style.css" />
     <title><%= title %></title>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <form>
-      <input name="city" />
-      <button>Envoyer</button>
-    </form>
+    <div class="weather">
+      <h1><%= title %></h1>
+      <form>
+        <input type="text" id="city" required />
+        <input type="submit" value="Envoyer" />
+      </form>
+    </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/js/index.js"></script>
   </body>
